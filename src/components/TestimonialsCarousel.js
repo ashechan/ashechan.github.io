@@ -18,7 +18,7 @@ const TestimonialsCarousel = () => {
         interval={3000}
       >
         <>
-          <img src={avatar1} alt="Clippendales" />
+          <img src={avatar1} alt="Clippendales" id="cliplogo"/>
           <div className="myCarousel">
             <h3>Clippendales</h3>
             <p>The logo and website came out exactly as I imagined, it was really cute. The website gave my business the push and visibility it needed to gather more customers. I couldn't have asked for anything better. </p>
