@@ -322,6 +322,12 @@ nav ul li {
   margin: 1rem;
 }
 
+#view {
+  text-align: center;
+  padding-top: 3rem;
+  
+}
+
 /* Overflow Box */
 
 .overflow {
@@ -486,6 +492,11 @@ nav ul li {
 .carousel .slide img {
   width: 10.5rem !important;
   border-radius: 50%;
+}
+
+#ncswhite {
+  height: 10.5rem !important;
+  width: 12rem !important;
 }
 
 .myCarousel h3 {

@@ -180,6 +180,9 @@ function Portfolio() {
             <PopupboxContainer {...popupboxConfigVervain} />
             <PopupboxContainer {...popupboxConfigBay} />
             <PopupboxContainer {...popupboxConfigOsm} />
+            <div id="view">
+            <a href="https://github.com/ashechan" target="_blank" className="btn-main-offer">View More</a>
+            </div>
         </div>
     )
 }

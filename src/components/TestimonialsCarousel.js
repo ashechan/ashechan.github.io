@@ -25,7 +25,7 @@ const TestimonialsCarousel = () => {
           </div>
         </>
         <>
-          <img src={avatar2} alt="Neighborly Cleaning Services" />
+          <img src={avatar2} alt="Neighborly Cleaning Services" id="ncswhite"/>
           <div className="myCarousel">
             <h3>Neighborly Cleaning Services</h3>
             <p>I screamed when I first saw my website. It represents who I am and what I want to accomplish. Not to mention how my great logo came out! 30/10 would recommend!!</p>
