@@ -47,28 +47,28 @@ function Footer() {
                     <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
                         <div className="d-flex justify-content-center">
                             <FacebookShareButton
-                            url={""}
+                            url={"https://ashechan.github.io/"}
                             quote={"Web Design and Development"}
                             hashtag="#webdesign"
                             >
                                 <FacebookIcon className="mx-3" size={36} />
                             </FacebookShareButton>
                             <TwitterShareButton
-                            url={""}
+                            url={"https://ashechan.github.io/"}
                             quote={"Web Design and Development"}
                             hashtag="#webdesign"
                             >
                                 <TwitterIcon className="mx-3" size={36} />
                             </TwitterShareButton>
                             <RedditShareButton
-                            url={""}
+                            url={"https://ashechan.github.io/"}
                             quote={"Web Design and Development"}
                             hashtag="#webdesign"
                             >
                                 <RedditIcon className="mx-3" size={36} />
                             </RedditShareButton>
                             <LinkedinShareButton
-                            url={""}
+                            url={"https://ashechan.github.io/"}
                             quote={"Web Design and Development"}
                             hashtag="#webdesign"
                             >

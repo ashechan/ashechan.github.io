@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import avatar1 from "../images/avatars/clip.png";
-import avatar2 from "../images/avatars/ncswhite.png";
+import avatar2 from "../images/avatars/whitencs.png";
 import avatar3 from "../images/avatars/avatar-2.png";
 import avatar4 from "../images/avatars/avatar-4.png";
 
