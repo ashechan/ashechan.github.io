@@ -115,8 +115,8 @@ function Portfolio() {
         <>
         <img className="portfolio-image-popupbox" src={osm} alt="Outer Senshi Memory game" />
         <p className="popup-text">Sailor Moon Outer Senshi memory game made with Vanilla Javascript</p>
-        <b className="hyper-text">Demo:</b><a className="hyper-link" onClick={() => window.open("mg1226.github.io/outer-senshi-memory-game/", "_blank")}> Click Here</a> <br/>
-        <b className="hyper-text">Code:</b><a className="hyper-link" onClick={() => window.open("https://github.com/ashechan/Outer-senshi-memory-game")}> Click Here</a>
+        <b className="hyper-text">Demo:</b><a className="hyper-link" onClick={() => window.open("https://mg1226.github.io/outer-senshi-memory-game/", "_blank")}> Click Here</a> <br/>
+        <b className="hyper-text">Code:</b><a className="hyper-link" onClick={() => window.open("https://github.com/ashechan/outer-senshi-memory")}> Click Here</a>
         </>
         )
         PopupboxManager.open({content})
