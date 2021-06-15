@@ -35,7 +35,7 @@ function Experience() {
                     <div className="marker"></div>
                     <div className="timeline-content">
                         <h3>2021-</h3>
-                        <p> Rehired to create the website for Clippendales and deployed it using Wordpress and Hostinger. Also rehired to create the website for Neighborly Cleaning Services. I was commissioned to created the EP cover for an up and coming  music group. I was hired to create the logo and brand for a new music label. I was also hired to create the logo for a new valet trash service and waste management company.   </p>
+                        <p> Rehired to create the website for Clippendales and deployed it using Wordpress and Hostinger. Also rehired to create the website for Neighborly Cleaning Services. I was commissioned to created the EP cover for an up and coming  music group. I was hired to create the logo and brand for a new music label. I was also hired to create the logo for a new valet trash service and waste management company. Received my certification <a href="https://www.freecodecamp.org/certification/ashechan/front-end-libraries" target="_blank">"Front End Libraries" 6/21</a>  </p>
                     </div>
                 </div>
             </div>
