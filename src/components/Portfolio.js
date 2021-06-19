@@ -2,7 +2,7 @@ import React from 'react';
 import clip from "../images/clip.jpg";
 import vervain from "../images/vervain.jpg";
 import bay from "../images/bay.jpg";
-import osm from "../images/osm.jpg";
+import osm from "../images/nscwebs.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 import Popup from 'reactjs-popup';
@@ -41,6 +41,37 @@ function Portfolio() {
         fadeInSpeed: 500
 
     }
+     //Outer Senshi Memory Game
+    
+     const openPopupboxOsm = () => {
+      const content = (
+      <>
+      <img className="portfolio-image-popupbox" src={osm} alt="Neighborly Cleaning Services" />
+      <p className="popup-text">Neighborly Cleaning Services website created with WordPress and Hostinger</p>
+      <b className="hyper-text">To Visit:</b><a className="hyper-link" onClick={() => window.open("https://neighborlycleaningservices.com/", "_blank")}> Click Here</a> <br/>
+      </>
+      )
+      PopupboxManager.open({content})
+      PopupboxManager.update({
+          content,
+          config: {
+            titleBar: {
+              text: "Neighborly Cleaning Services Website",
+            },
+          },
+        });
+  }
+
+  const popupboxConfigOsm = {
+  
+      titleBar: {
+          enable: true,
+          text: "Neighborly Cleaning Services Website"
+      },
+      fadeIn: true,
+      fadeInSpeed: 500
+
+  }
 
     //Vervain
     
@@ -75,6 +106,8 @@ function Portfolio() {
 
     }
 
+     
+
       //Bayonetta
     
       const openPopupboxBay = () => {
@@ -108,38 +141,7 @@ function Portfolio() {
 
     }
 
-     //Outer Senshi Memory Game
-    
-     const openPopupboxOsm = () => {
-        const content = (
-        <>
-        <img className="portfolio-image-popupbox" src={osm} alt="Outer Senshi Memory game" />
-        <p className="popup-text">Sailor Moon Outer Senshi memory game made with Vanilla Javascript</p>
-        <b className="hyper-text">Demo:</b><a className="hyper-link" onClick={() => window.open("https://mg1226.github.io/outer-senshi-memory-game/", "_blank")}> Click Here</a> <br/>
-        <b className="hyper-text">Code:</b><a className="hyper-link" onClick={() => window.open("https://github.com/ashechan/outer-senshi-memory")}> Click Here</a>
-        </>
-        )
-        PopupboxManager.open({content})
-        PopupboxManager.update({
-            content,
-            config: {
-              titleBar: {
-                text: "Outer Senshi Memory Game",
-              },
-            },
-          });
-    }
-
-    const popupboxConfigOsm = {
-    
-        titleBar: {
-            enable: true,
-            text: "Outer Senshi Memory Game"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-
-    }
+   
 
 
 
@@ -153,6 +155,13 @@ function Portfolio() {
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
+
+                  {/*..*/}
+                  <div className="portfolio-image-box" onClick={openPopupboxOsm}>
+                    <img className="portfolio-image" src={osm} alt="Neighborly LCeaning Services" />
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                </div>    
                 
                 {/*..*/}
                 <div className="portfolio-image-box" onClick={openPopupboxVervain}>
@@ -166,20 +175,16 @@ function Portfolio() {
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                 </div>
-                {/*..*/}
-                <div className="portfolio-image-box" onClick={openPopupboxOsm}>
-                    <img className="portfolio-image" src={osm} alt="Outer Senshi memory game" />
-                    <div className="overflow"></div>
-                    <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                </div>
+              
         
             </div>
             
             </div>
             <PopupboxContainer {...popupboxConfigClip} />
+            <PopupboxContainer {...popupboxConfigOsm} />
             <PopupboxContainer {...popupboxConfigVervain} />
             <PopupboxContainer {...popupboxConfigBay} />
-            <PopupboxContainer {...popupboxConfigOsm} />
+         
             <div id="view">
             <a href="https://github.com/ashechan" target="_blank" className="btn-main-offer">View More</a>
             </div>
