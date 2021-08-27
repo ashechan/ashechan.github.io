@@ -21,22 +21,16 @@ export const Navbar = () => {
                 <Link smooth={true} to="home" className="nav-link active" aria-current="page" href="#">Home</Link >
               </li>
               <li className="nav-item">
-                <Link smooth={true} to="about" offset={-110} className="nav-link" href="#">About Me</Link >
+              <a  to="https://ashechan.github.io/about" className="nav-link " href="https://ashechan.github.io/about">About</a>
               </li>
               <li className="nav-item">
-                <Link smooth={true} to="services" offset={-110}  className="nav-link" href="#">Services</Link >
-              </li>
-              <li className="nav-item">
-                <Link smooth={true} to="experience" offset={-110}  className="nav-link" href="#">Experience</Link >
-              </li>
+              <a  to="https://ashechan.github.io/experience" className="nav-link " href="https://ashechan.github.io/experience">Experience</a>             
+               </li>
               <li className="nav-item">
                 <a  to="//ashechan.github.io/my-work/"  className="nav-link" href="https://ashechan.github.io/my-work/">My Work</ a>
               </li>
               <li className="nav-item">
-                <Link smooth={true} to="testimonials" offset={-110}  className="nav-link" href="#">Testimonials</Link >
-              </li>
-              <li className="nav-item">
-                <Link smooth={true} to="contact" offset={-110}  className="nav-link" href="#">Contact Me</Link >
+              <a  to="https://ashechan.github.io/contact" className="nav-link " href="https://ashechan.github.io/contact">Contact Me</a>
               </li>
             </ul>
           </div>
