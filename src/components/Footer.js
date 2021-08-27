@@ -29,18 +29,17 @@ function Footer() {
                     <div className="col-lg-3 col-md-2 col-sm-6">
                         <div className="row">
                             <div className="col">
-                                <a className="footer-nav" href="#home">Home</a>
+                                <a className="footer-nav" href="https://ashechan.github.io">Home</a>
                                 <br/>
-                                <a className="footer-nav" href="#about">About Me</a>
+                                <a className="footer-nav" href="https://ashechan.github.io/about">About Me</a>
                                 <br/>
-                                <a className="footer-nav" href="#services">Services</a>
+                                <a className="footer-nav" href="https://ashechan.github.io/experience">Experience</a>
+
                             </div>
                             <div className="col">
-                                <a className="footer-nav" href="#experience">Experience</a>
+                                <a className="footer-nav" href="https://ashechan.github.io/my-work/">My Work</a>
                                 <br/>
-                                <a className="footer-nav" href="#portfolio">Portfolio</a>
-                                <br/>
-                                <a className="footer-nav" href="#contact">Contact Me</a>
+                                <a className="footer-nav" href="https://ashechan.github.io/contact">Contact Me</a>
                             </div>
                         </div>
                     </div>
