@@ -30,7 +30,7 @@ export const Navbar = () => {
                 <Link smooth={true} to="experience" offset={-110}  className="nav-link" href="#">Experience</Link >
               </li>
               <li className="nav-item">
-                <Link smooth={true} to="portfolio" offset={-110}  className="nav-link" href="#">Portfolio</Link >
+                <a  to="//ashechan.github.io/my-work/"  className="nav-link" href="https://ashechan.github.io/my-work/">My Work</ a>
               </li>
               <li className="nav-item">
                 <Link smooth={true} to="testimonials" offset={-110}  className="nav-link" href="#">Testimonials</Link >

@@ -1,7 +1,7 @@
 import React from 'react';
 import clip from "../images/clip.jpg";
-import vervain from "../images/vervain.jpg";
-import bay from "../images/bay.jpg";
+import nier from "../images/nier.png";
+import bayo from "../images/bayo2.png";
 import osm from "../images/nscwebs.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
@@ -41,7 +41,7 @@ function Portfolio() {
         fadeInSpeed: 500
 
     }
-     //Outer Senshi Memory Game
+     //NCS
     
      const openPopupboxOsm = () => {
       const content = (
@@ -73,82 +73,80 @@ function Portfolio() {
 
   }
 
-    //Vervain
+   //Nier 
     
-    const openPopupboxVervain = () => {
-        const content = (
-        <>
-        <img className="portfolio-image-popupbox" src={vervain} alt="A bootstrap theme called Vervain" />
-        <p className="popup-text">Bootstrap theme I named Vervain. Pictures edited using Photoshop </p>
-        <b className="hyper-text">Demo:</b><a className="hyper-link" onClick={() => window.open("https://ashechan.github.io/vervain-theme/", "_blank")}> Click Here</a> <br/>
-        <b className="hyper-text">Code:</b><a className="hyper-link" onClick={() => window.open("https://github.com/ashechan/vervain-theme")}> Click Here</a>
-        </>
-        )
-        PopupboxManager.open({content})
-        PopupboxManager.update({
-            content,
-            config: {
-              titleBar: {
-                text: "Vervain: Bootstrap theme project",
-              },
-            },
-          });
-    }
-
-    const popupboxConfigVervain = {
+   const openPopupboxNier = () => {
+    const content = (
+    <>
+    <img className="portfolio-image-popupbox" src={nier} alt="Nier Mock Web" />
+    <p className="popup-text"> UI Design for the a Nier franchise e-shop  </p>
+    <b className="hyper-text">Demo:</b><a className="hyper-link" onClick={() => window.open("https://xd.adobe.com/view/98e22863-aad1-4c9c-b737-4c780422339c-cdb1/?fullscreen", "_blank")}> Click Here</a> <br/>
     
-        titleBar: {
-            enable: true,
-            text: "Vervain: Bootstrap theme project"
+    </>
+    )
+    PopupboxManager.open({content})
+    PopupboxManager.update({
+        content,
+        config: {
+          titleBar: {
+            text: "Nier E-Shop",
+          },
         },
-        fadeIn: true,
-        fadeInSpeed: 500
+      });
+}
 
-    }
+const popupboxConfigNier = {
+
+    titleBar: {
+        enable: true,
+        text: "Nier E-Shop"
+    },
+    fadeIn: true,
+    fadeInSpeed: 500
+
+}
 
      
 
       //Bayonetta
     
-      const openPopupboxBay = () => {
-        const content = (
-        <>
-        <img className="portfolio-image-popupbox" src={bay} alt="Bayonetta charactr" />
-        <p className="popup-text">Image of Bayonetta as a tumbler doll from the game "Bayonetta" created using HTML/CSS. <br/> Placed fourth in the international Bayonetta 10th Anniversary art contest.</p>
-        <b className="hyper-text">Demo:</b><a className="hyper-link" onClick={() => window.open("https://codepen.io/blu3ros33/full/dyygOPN", "_blank")}> Click Here</a> <br/>
-        <b className="hyper-text">Code:</b><a className="hyper-link" onClick={() => window.open("https://codepen.io/blu3ros33/pen/dyygOPN")}> Click Here</a>
-        </>
-        )
-        PopupboxManager.open({content})
-        PopupboxManager.update({
-            content,
-            config: {
-              titleBar: {
-                text: "Bayonetta 10th Anniversary",
-              },
+    const openPopupboxBayo = () => {
+      const content = (
+      <>
+      <img className="portfolio-image-popupbox" src={bayo} alt="Bayonetta 2 mock e shop" />
+      <p className="popup-text"> Mock Bayonetta 2 launch site made with Adobe XD  </p>
+      <b className="hyper-text">Demo:</b><a className="hyper-link" onClick={() => window.open("https://xd.adobe.com/view/9046650a-f76b-487a-a618-2b223aee4544-c515/?fullscreen", "_blank")}> Click Here</a> <br/>
+      
+      </>
+      )
+      PopupboxManager.open({content})
+      PopupboxManager.update({
+          content,
+          config: {
+            titleBar: {
+              text: "Bayonetta 2 E-Shop",
             },
-          });
-    }
+          },
+        });
+  }
 
-    const popupboxConfigBay = {
-    
-        titleBar: {
-            enable: true,
-            text: "Bayonetta 10th Anniversary"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+  const popupboxConfigBayo = {
+  
+      titleBar: {
+          enable: true,
+          text: "Bayonetta 2 E-Shop"
+      },
+      fadeIn: true,
+      fadeInSpeed: 500
 
-    }
-
-   
+  }
 
 
 
     return (
         <div id="portfolio" className="portfolio-wrapper">
             <div className="container">
-                <h1 className="text-uppercase text-center py-5">portfolio</h1>
+                <h1 className="text-uppercase text-center py-5">Featured Work</h1>
                 < div className="image-box-wrapper row justify-content-center">
                     <div className="portfolio-image-box" onClick={openPopupboxClip}>
                     <img className="portfolio-image" src={clip} alt="Clippendales mobile dog salon website" />
@@ -164,17 +162,17 @@ function Portfolio() {
                 </div>    
                 
                 {/*..*/}
-                <div className="portfolio-image-box" onClick={openPopupboxVervain}>
-                    <img className="portfolio-image" src={vervain} alt="Vervain a Bootstrap theme" />
+                <div className="portfolio-image-box" onClick={openPopupboxNier}>
+                    <img className="portfolio-image" src={nier} alt=" Nier mock e shop" />
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                </div>
-                {/*..*/}
-                <div className="portfolio-image-box" onClick={openPopupboxBay}>
-                    <img className="portfolio-image" src={bay} alt="Bayonetta created with HTML/CSS" />
+                </div>   
+                 {/*..*/}
+                 <div className="portfolio-image-box" onClick={openPopupboxBayo}>
+                    <img className="portfolio-image" src={bayo} alt="Neighborly LCeaning Services" />
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                </div>
+                </div>  
               
         
             </div>
@@ -182,8 +180,8 @@ function Portfolio() {
             </div>
             <PopupboxContainer {...popupboxConfigClip} />
             <PopupboxContainer {...popupboxConfigOsm} />
-            <PopupboxContainer {...popupboxConfigVervain} />
-            <PopupboxContainer {...popupboxConfigBay} />
+            <PopupboxContainer {...popupboxConfigNier} />
+            <PopupboxContainer {...popupboxConfigBayo} />
          
             <div id="view">
             <a href="https://github.com/ashechan" target="_blank" className="btn-main-offer">View More</a>

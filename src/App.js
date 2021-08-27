@@ -13,6 +13,7 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <>
+    
     <Particles 
     params={{
       particles: {
@@ -43,6 +44,7 @@ function App() {
     <Testimonials />
     <Contacts />
     <Footer />
+   
     </>
   );
 }
